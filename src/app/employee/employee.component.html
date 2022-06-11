@@ -1,0 +1,40 @@
+
+
+<div class="container">
+  <br />
+  <div style="text-align:right;">
+    <input type="button" value="Download Report PDF" class="btn btn-success" (click)="SavePDF()">
+    </div>
+    <div class="container" id="content" #content>
+      <div class="page-header">
+        <div style="text-align:center;">
+          <h1 class="display-4">Employees Report</h1>
+
+        </div>
+      </div>
+      <br />
+      
+
+      <table class="table table-striped">
+
+        <thead class="thead-light">
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Age</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of empsList">
+            <td>{{item.ID}}</td>
+            <td>{{item.E_Name}}</td>
+            <td>{{item.Age}}</td>
+            <td>{{item.D_Name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br /><br />
+
+  </div>

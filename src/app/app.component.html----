@@ -1,0 +1,6 @@
+<div class="container">
+  <h3>helllllo</h3>
+  <router-outlet></router-outlet>
+
+
+</div>
