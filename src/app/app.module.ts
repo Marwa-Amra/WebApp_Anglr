@@ -8,18 +8,26 @@ import { SharedService } from './shared.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ReportTestComponent } from './report-test/report-test.component';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    ReportTestComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PdfViewerModule,
+    NgxExtendedPdfViewerModule
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]
